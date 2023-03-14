@@ -1,19 +1,16 @@
-import Navbar from "./Home/Navbar";
+import Navbar from "./Home/NavBar";
 import Hero from "./Home/Hero";
 import Trainings from "./Home/Trainings";
+import App from "./Getintouch/App";
 
-import { Routes as Switch, Route } from "react-router-dom";
 
 function Main() {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <Hero />
       <Trainings />
-      {/* <Switch>
-        <Route path="/" element={<Hero />} />
-        <Route path="/" element={<Trainings />} />
-      </Switch> */}
+      <App/>
     </div>
   );
 }
