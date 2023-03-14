@@ -5,7 +5,7 @@ function TrainingCard() {
     <div className="w-auto h-auto mx-6 m-4 rounded-xl bg-gray-200 shadow-2xl">
       <div className="inline-block">
         <img
-          src="/assets/django.png"
+          src="/assets/djangoT.png"
           alt="..."
           className="w-auto h-auto rounded-tr-xl rounded-tl-xl"
         />
