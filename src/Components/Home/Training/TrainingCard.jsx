@@ -13,11 +13,10 @@ function TrainingCard() {
           <h1 className="font-bold text-start">Title : {}</h1>
           <h1 className="font-semibold text-end">Days : {}</h1>
         </div>
-
-        <h1 className="text-bold text-justify mx-4 text-lg">
-          Description : This is SoftSkill Training
+        <h1 className="text-bold text-justify mx-4">
+          Description : This is SoftSkill Training.
         </h1>
-        <div className="grid grid-cols-2 px-2 py-2">
+        <div className="grid grid-cols-2 gap-10 px-2 py-4">
           <div className="align-baseline">
             <img
               src="/assets/teacher1.png"
