@@ -10,8 +10,8 @@ function TrainingCard() {
           className="w-auto h-auto rounded-tr-xl rounded-tl-xl"
         />
         <div className="grid grid-cols-2 mx-4 my-2 text-xs">
-          <h1 className="font-bold text-start">Title : {}</h1>
-          <h1 className="font-semibold text-end">Days : {}</h1>
+          <h1 className="font-bold text-start">Title : Soft Skill{}</h1>
+          <h1 className="font-semibold text-end">3 Days Ago{}</h1>
         </div>
         <h1 className="text-bold text-justify mx-4">
           Description : This is SoftSkill Training.
@@ -24,7 +24,7 @@ function TrainingCard() {
               className="w-16 h-16 rounded-full inline"></img>
             <span> John Doe</span>
           </div>
-          <button className="px-2 py-2">Join now</button>
+          <button className="mx-5 rounded-2xl my-3 px-2 py-1">Join now</button>
         </div>
       </div>
     </div>
