@@ -1,6 +1,6 @@
 import Navbar from "./Home/Navbar";
 import Hero from "./Home/Hero";
-import Trainings from "./Home/Trainings";
+import Trainings from "./Home/Training/Trainings";
 
 import { Routes as Switch, Route } from "react-router-dom";
 
