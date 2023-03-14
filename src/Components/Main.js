@@ -1,7 +1,7 @@
 import Navbar from "./Home/NavBar";
 import Hero from "./Home/Hero";
 import Trainings from "./Home/Trainings";
-import App from "./Getintouch/App";
+import App from "./Home/Getintouch/App";
 
 
 function Main() {
