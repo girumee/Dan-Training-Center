@@ -26,7 +26,7 @@ function Navbar() {
           </button>
           <button className="px-8 py-2">Register</button>
         </div>
-        <div className="md:hidden" onClick={handleClick}>
+        <div className="md:hidden pr-4" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
         </div>
       </div>

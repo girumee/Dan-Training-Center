@@ -1,25 +1,34 @@
 import React from "react";
-
+// import { BsSearch } from "react-icons/ai";
 function Hero() {
   return (
-    <div className="w-full h-screen pt-20">
-      <div className="w-full h-screen bg-gray-900/70 absolute ">
-        <img
-          className="w-full h-screen mix-blend-overlay bg-[url('/public/assets/danPic.png')] bg-cover"
-          alt="..."
-        />
-      </div>
-      <div className="grid md:grid-cols-1 max-w-[1100px] mx-auto text-white relative">
-        <div className="pt-10 flex flex-col justify-between md:items-start w-full px-2 py-8">
-          <p className="pt-60 text-8xl font-serif text-center text-slate-50">
-            Find the best Trainings and Learn.
-          </p>
-          <button className="px-20 text-2xl py-3 my-10">Get Started</button>
-          <p className="text-2xl font-serif">Learn More ---</p>
+    <div className="w-full h-screen py-12">
+      <img
+        className="w-full h-screen bg-[url('/public/assets/danPic.png')] bg-cover"
+        alt="..."
+      />
+      <div className="absolute w-full h-screen left-0 top-12 bg-gray-900/70"></div>
+      <div className="absolute w-full h-full top-10 flex flex-col justify-center text-center text-white p-4">
+        <h1 className="font-bold text-8xl grid grid-cols-1 my-10">
+          Find the best Trainings <br /> and Learn.
+        </h1>
+        <div className="flex text-center mx-auto gap-2">
+          <button className="text-2xl py-2 my-6 text-center w-48">
+            Get Started
+          </button>
+          <p className="text-2xl py-2 my-6 w-48">Learn More ---</p>
         </div>
-        <div>
-          <search></search>
-        </div>
+        <form className="flex justify-between items-center max-w-[700px] py-4 mx-auto mt-20 w-full border p-1 rounded-full bg-gray-100/10">
+          <input
+            className="text-lg bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="What do you want to Search?"
+            // className="relative x-10 bg-transparent w-12 h-12 rounded-full border "
+          />
+          <button>{/* <BsSearch /> */}</button>
+        </form>
       </div>
     </div>
   );

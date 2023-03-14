@@ -1,5 +1,6 @@
 import Navbar from "./Home/Navbar";
 import Hero from "./Home/Hero";
+import Trainings from "./Home/Trainings";
 
 import { Routes as Switch, Route } from "react-router-dom";
 
@@ -7,9 +8,12 @@ function Main() {
   return (
     <div>
       <Navbar />
-      <Switch>
+      <Hero />
+      <Trainings />
+      {/* <Switch>
         <Route path="/" element={<Hero />} />
-      </Switch>
+        <Route path="/" element={<Trainings />} />
+      </Switch> */}
     </div>
   );
 }
