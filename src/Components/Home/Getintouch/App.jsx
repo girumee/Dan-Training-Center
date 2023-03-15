@@ -5,8 +5,7 @@ import Map from "./Map";
 import Account from"./Account";
 
 function App() {
-  return<div className="">
-       <Account/>  
+  return<div className=""> 
        <FormField/>
        <Map/>
        <Footer/>
