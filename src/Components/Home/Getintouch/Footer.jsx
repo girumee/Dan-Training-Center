@@ -23,15 +23,15 @@ function Footer() {
 
             <div className="flex flex-col pl-[150px]">
               <h4 className="pb-3">
-                <a href="">About</a>
+                <Link to="/">About</Link>
               </h4>
               <h4>
-                <a href="">Contact Us</a>
+                <Link to="/">Contact Us</Link>
               </h4>
             </div>
 
             <div className="flex flex-col pl-[20%]">
-              <h3 className="pb-4">Subscrib to our news letter</h3>
+              <h3 className="pb-4">Subscribe to our news letter</h3>
 
               <div className="flex flex-row pl-2">
                 <div>
@@ -49,31 +49,31 @@ function Footer() {
               </div>
 
               <div className="mt-[40px]">
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block pt-1">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block pt-1">
+                <Link
+                  to="/"
+                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block">
+                  <i className="fa-brands fa-facebook-f"></i>
+                </Link>
+                <Link
+                  to="/"
+                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block">
                   <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block pt-1">
+                </Link>
+                <Link
+                  to="/"
+                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block">
                   <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block pt-1">
+                </Link>
+                <Link
+                  to="/"
+                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block">
                   <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block pt-1">
+                </Link>
+                <Link
+                  to="/"
+                  className="w-10 h-10 rounded-lg pt-[5px] text-center bg-white text-[#8D8BA7] hover:bg-[#5D5A88] mx-1 inline-block">
                   <i class="fa-brands fa-youtube"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ function Footer() {
             <p>
               Copyright
               <br />
-              Reserved © Dan Traning Center | All Rights
+              Reserved © Dan Training Center | All Rights
             </p>
           </div>
         </div>
