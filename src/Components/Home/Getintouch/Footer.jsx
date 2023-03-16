@@ -10,14 +10,14 @@ function Footer() {
           <div className="flex flex-row pl-[79px] pt-[33px]">
             <h3>
               {" "}
-              <Link href="#">Home</Link>
+              <Link to="#">Home</Link>
             </h3>
             <div className="flex flex-col pl-[150px]">
               <h4 className="pb-3">
-                <Link href="">Trainer</Link>{" "}
+                <Link to="">Trainer</Link>{" "}
               </h4>
               <h4>
-                <Link href="">Training</Link>
+                <Link to="">Training</Link>
               </h4>
             </div>
 

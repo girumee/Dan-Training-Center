@@ -14,10 +14,6 @@ function Main() {
       <TrainerPage />
       <ResAndChoose />
       <App />
-      {/* <Switch>
-        <Route path="/" element={<Hero />} />
-        <Route path="/" element={<Trainings />} />
-      </Switch> */}
     </div>
   );
 }
