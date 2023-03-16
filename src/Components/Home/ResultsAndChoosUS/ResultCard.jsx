@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 
-export default function ResultCard(props){
-    const targetRef = useRef(null);
+export default function ResultCard(props) {
+  const targetRef = useRef(null);
   const [views, setViews] = useState(0);
   const [isIntersecting, setIsIntersecting] = useState(false);
 
@@ -33,10 +33,20 @@ export default function ResultCard(props){
   }, []);
 
   const names = props.name;
-    return <div className="content-center text-center" >
-        <img src={props.image1} alt="star" className="w-96 h-3/5"></img>
-       <h3 className="mt-4 text-4xl font-bold text-amber-700">{names=='satisfaction'? <span>{views}%</span> : <span>{views}+</span>}</h3>
-       <p className="text-2xl" ref={targetRef}>{props.title}</p>
-       <p className="w-60 my-2 mx-auto">{props.text}</p>
+  return (
+    <div className="content-center text-center">
+      <img src={props.image1} alt="star" className="w-96 h-3/5"></img>
+      <h3 className="mt-4 text-4xl font-bold text-amber-700">
+        {names === "satisfaction" ? (
+          <span>{views}%</span>
+        ) : (
+          <span>{views}+</span>
+        )}
+      </h3>
+      <p className="text-2xl" ref={targetRef}>
+        {props.title}
+      </p>
+      <p className="w-60 my-2 mx-auto">{props.text}</p>
     </div>
+  );
 }

@@ -4,9 +4,10 @@ export default function ChooseUs() {
       <div className="w-1/2 text-left pl-20 py-20">
         <p>Why choose us?</p>
         <p className="pt-5 w-4/5 text-lg text-justify">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices
-          scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet
-          phasellus. Pellentesque non nunc placerat mi quis vitae cursus ornare.
+          Are you looking to take your skills to the next level? Our company's
+          training program is here to help you do just that. With experienced
+          Trainer and a comprehensive Curriculum, we'll equip you with the
+          knowledge and tools you need to excel in your field.
         </p>
         <button className="rounded-full bg-[#962DFF] py-3 px-5 text-white text-lg mt-5">
           Learn More
