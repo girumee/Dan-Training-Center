@@ -1,4 +1,4 @@
-import Navbar from "./Home/NavBar";
+import Navbar from "./Home/Navbar";
 import Hero from "./Home/Hero";
 import Trainings from "./Home/Training/Trainings";
 import TrainerPage from "./Home/Trainer/TrainerPage";
@@ -14,10 +14,6 @@ function Main() {
       <TrainerPage />
       <ResAndChoose />
       <App />
-      {/* <Switch>
-        <Route path="/" element={<Hero />} />
-        <Route path="/" element={<Trainings />} />
-      </Switch> */}
     </div>
   );
 }

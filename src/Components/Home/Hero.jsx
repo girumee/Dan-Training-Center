@@ -2,12 +2,12 @@ import React from "react";
 // import { BsSearch } from "react-icons/ai";
 function Hero() {
   return (
-    <div className="w-full h-screen py-12">
+    <div className="w-full h-screen py-0">
       <img
         className="w-full h-screen bg-[url('/public/assets/danPic.png')] bg-cover"
         alt="..."
       />
-      <div className="absolute w-full h-screen left-0 top-12 bg-gray-900/70"></div>
+      <div className="absolute w-full h-screen left-0 top-20 bg-gray-900/70"></div>
       <div className="absolute w-full h-full top-10 flex flex-col justify-center text-center text-white p-4">
         <h1 className="font-bold text-8xl grid grid-cols-1 my-10">
           Find the best Trainings <br /> and Learn.

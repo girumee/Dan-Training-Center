@@ -2,14 +2,15 @@ import React from "react";
 import FormField from "./FormField";
 import Footer from "./Footer";
 import Map from "./Map";
-import Account from"./Account";
 
 function App() {
-  return<div className=""> 
-       <FormField/>
-       <Map/>
-       <Footer/>
-       </div>
+  return (
+    <div className="">
+      <FormField />
+      <Map />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
