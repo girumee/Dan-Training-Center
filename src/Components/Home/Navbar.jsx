@@ -31,12 +31,14 @@ function Navbar() {
         </div>
         <div className="hidden md:flex p-6 w-1/4">
           <div className="mt-1 mr-8 h-10 border-l-2 border-black"></div>
-          <button className="px-10 py-2 bg-transparent text-[#5D5A88] mr-2">
-            <Link to="/">LogIn</Link>
-          </button>
-          <button className="px-8 py-2">
-            <Link to="/">Register</Link>
-          </button>
+          <Link to="/">
+            <button className="px-10 py-2 bg-transparent text-[#5D5A88] mr-2">
+              LogIn
+            </button>
+          </Link>
+          <Link to="/">
+            <button className="px-8 py-2">Register</button>
+          </Link>
         </div>
         <div className="md:hidden pr-4" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
