@@ -1,5 +1,4 @@
 
-
 export default function ChooseUs (){
     return <div className="w-full h-screen flex">
         <div className='w-1/2 text-left pl-20 py-20'>
