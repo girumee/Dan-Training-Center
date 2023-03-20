@@ -31,8 +31,8 @@ function Navbar() {
         </div>
         <div className="hidden md:flex p-6 w-1/4">
           <div className="mt-1 mr-8 h-10 border-l-2 border-black"></div>
-          <Link to="/">
-            <button className="px-10 py-2 bg-transparent text-[#5D5A88] mr-2">
+          <Link to="/login">
+            <button className="px-10 py-2 bg-transparent text-black mr-2">
               LogIn
             </button>
           </Link>
@@ -50,8 +50,8 @@ function Navbar() {
         <li className="border-b-2 border-zinc-300 w-full">Why Choose Us</li>
         <li className="border-b-2 border-zinc-300 w-full">Contact Us</li>
         <div className="flex flex-col my-4">
-          <button className="px-8 py-3 bg-transparent text-[#5D5A88] mb-4">
-            <Link to="/">LogIn</Link>
+          <button className="px-8 py-3 bg-transparent text-purple-500 mb-4">
+            <Link to="/login">LogIn</Link>
           </button>
           <button className="px-8 py-3">
             <Link to="/">Register</Link>
