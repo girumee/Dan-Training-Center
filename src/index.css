@@ -29,3 +29,14 @@ code {
     display: none;
   }
 }
+
+
+.myshadow {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: black;
+  opacity: 1;
+  -webkit-filter: blur(10px);
+  -webkit-transform: scale(1, 1.2);
+}
