@@ -36,7 +36,7 @@ function Navbar() {
               LogIn
             </button>
           </Link>
-          <Link to="/">
+          <Link to="/register">
             <button className="px-8 py-2">Register</button>
           </Link>
         </div>
