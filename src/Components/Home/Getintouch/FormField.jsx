@@ -5,7 +5,7 @@ function FormField() {
     <div>
       <div
         className="flex flex-col w-2/5 shadow-lg bg-white absolute mt-[10%] ml-[100px] pl-[40px] rounded-lg"
-        id="getintouch">
+        id="contactus">
         <div className="mt-[50px]">
           <h3 className=" pb-4">Get in touch</h3>
         </div>

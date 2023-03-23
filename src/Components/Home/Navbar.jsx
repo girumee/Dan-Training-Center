@@ -28,7 +28,7 @@ function Navbar() {
               <HashLink to="/#chooseus">Why Choose Us</HashLink>
             </li>
             <li>
-              <HashLink to="/#getintouch">Contact Us</HashLink>
+              <HashLink to="/#contactus">Contact Us</HashLink>
             </li>
           </ul>
         </div>

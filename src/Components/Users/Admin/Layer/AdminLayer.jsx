@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Box } from "@mui/material";
 //Admin Pages
 import AdminTopbar from "./AdminTopbar";
 //Admin Pages
@@ -8,7 +8,7 @@ import AdminSidebar from "./AdminSidebar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "../Constant/Theme";
 
-export default function AdminLayout(props) {
+export default function AdminLayer(props) {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
 
@@ -22,7 +22,7 @@ export default function AdminLayout(props) {
           </div>
           <main className="w-full h-18">
             <AdminTopbar setIsSidebar={setIsSidebar} />
-            <div>{props.children}</div>
+            {props.children}
           </main>
         </div>
       </ThemeProvider>

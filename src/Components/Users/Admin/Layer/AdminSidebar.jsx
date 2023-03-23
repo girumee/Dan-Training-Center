@@ -12,6 +12,7 @@ import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
+import LogoutIcon from "@mui/icons-material/Logout";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -86,16 +87,13 @@ export default function AdminSidebar() {
           {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="left" alignItems="left">
-                <Link to="/">
-                  {" "}
-                  <img
-                    src="assets/logo.svg"
-                    alt="Dan Training Center"
-                    width="200px"
-                    height="200px"
-                    style={{ cursor: "pointer", borderRadius: "50%" }}
-                  />
-                </Link>
+                <img
+                  src="assets/logo.svg"
+                  alt="Dan Training Center"
+                  width="200px"
+                  height="200px"
+                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                />
               </Box>
             </Box>
           )}
@@ -161,6 +159,13 @@ export default function AdminSidebar() {
               title="Feedback"
               to="/feedback"
               icon={<QuestionAnswerOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Logout"
+              to="/"
+              icon={<LogoutIcon />}
               selected={selected}
               setSelected={setSelected}
             />
