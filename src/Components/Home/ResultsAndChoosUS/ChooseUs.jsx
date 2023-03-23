@@ -1,6 +1,6 @@
 export default function ChooseUs() {
   return (
-    <div className="w-full h-screen flex">
+    <div className="w-full h-screen flex" id="chooseus">
       <div className="w-1/2 text-left pl-20 py-20">
         <p>Why choose us?</p>
         <p className="pt-5 w-4/5 text-lg text-justify">

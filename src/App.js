@@ -4,7 +4,7 @@ import Home from "./Components/Home/Home";
 
 //Auth Pages
 import Login from "./Components/Auth/Login";
-import Admin from './Components/Users/Admin';
+import Register from "./Components/Auth/Register";
 
 //Admin Page
 import Dashboard from "./Components/Users/Admin/Pages/Dashboard";
@@ -19,7 +19,6 @@ import Feedback from "./Components/Users/Admin/Pages/Feedback";
 // import AdminLayout from "./Components/Users/Admin/Layout/AdminLayout";
 
 import { Routes as Switch, Route } from "react-router-dom";
-import Register from "./Components/Auth/Register";
 
 function App() {
   return (
@@ -30,7 +29,7 @@ function App() {
 
         {/* Auth pages */}
         <Route path="/login" element={<Login />} />
-        <Route path="/Register" element={<Register />}/>
+        <Route path="/Register" element={<Register />} />
 
         {/* Admin Page Routes  */}
         <Route path="/dashboard" element={<Dashboard />} />

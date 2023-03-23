@@ -86,13 +86,16 @@ export default function AdminSidebar() {
           {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="left" alignItems="left">
-                <img
-                  src="assets/logo.svg"
-                  alt="Dan Training Center"
-                  width="200px"
-                  height="200px"
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
+                <Link to="/">
+                  {" "}
+                  <img
+                    src="assets/logo.svg"
+                    alt="Dan Training Center"
+                    width="200px"
+                    height="200px"
+                    style={{ cursor: "pointer", borderRadius: "50%" }}
+                  />
+                </Link>
               </Box>
             </Box>
           )}

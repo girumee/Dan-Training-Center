@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { HashLink } from "react-router-hash-link";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 
 function Navbar() {
@@ -11,21 +11,21 @@ function Navbar() {
     <div className="w-screen h-[90px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between item-center w-full h-full">
         <div className="flex items-center w-3/4 justify-between">
-          <Link to="/">
+          <Link to="/dashboard">
             <img src="assets/logo.svg" alt="Dan Training Center" />
           </Link>
           <ul className="hidden md:flex">
             <li>
-              <Link to="/admin">Home</Link>
+              <HashLink to="/#home">Home</HashLink>
             </li>
             <li>
-              <Link to="/">Trainings</Link>
+              <HashLink to="/#trainings">Trainings</HashLink>
             </li>
             <li>
-              <Link to="/">Why Choose Us</Link>
+              <HashLink to="/#chooseus">Why Choose Us</HashLink>
             </li>
             <li>
-              <Link to="/">Contact Us</Link>
+              <HashLink to="/#getintouch">Contact Us</HashLink>
             </li>
           </ul>
         </div>

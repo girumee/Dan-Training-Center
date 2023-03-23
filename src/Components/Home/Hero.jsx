@@ -2,7 +2,7 @@ import React from "react";
 // import { BsSearch } from "react-icons/ai";
 function Hero() {
   return (
-    <div className="w-full h-screen py-0">
+    <div className="w-full h-screen py-0" id="home">
       <img
         className="w-full h-screen bg-[url('/public/assets/danPic.png')] bg-cover"
         alt="..."

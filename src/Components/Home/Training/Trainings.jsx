@@ -4,7 +4,7 @@ import TrainingCard from "./TrainingCard";
 
 function Trainings() {
   return (
-    <div className="w-full h-screen px-8">
+    <div className="w-full h-screen px-8" id="trainings">
       <div className="grid grid-cols-1 relative px-auto bg-gray-200 rounded-2xl shadow-md h-screen w-full">
         <h3 className="text-3xl py-10 font-bold text-center text-black">
           Browse our Trainings
