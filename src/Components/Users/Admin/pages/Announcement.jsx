@@ -1,9 +1,11 @@
-import AdminNavBar from "../AdminNavBar";
-import AdminSideNav from "../AdminSideNav";
+import AdminLayer from "../Layer/AdminLayer";
 
-export default function Announcement()
-{
-    return <div className="col-span-7 h-screen">
-            <AdminNavBar name='Announcement'/>
-        </div>
+export default function Announcement() {
+  return (
+    <AdminLayer>
+      <div className="">
+        <h1>Announcement</h1>
+      </div>
+    </AdminLayer>
+  );
 }
