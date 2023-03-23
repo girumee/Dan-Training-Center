@@ -55,9 +55,9 @@ export default function Login() {
                 <p>Remember me</p>
               </div>
               <div className="text-start w-2/3 mx-auto">
-                <a href="#" className="text-purple-700 font-semibold">
+                <Link to="/" className="text-purple-700 font-semibold">
                   forgot Password?
-                </a>
+                </Link>
               </div>
               <Link to="/admin">
                 <input
