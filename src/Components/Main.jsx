@@ -1,26 +1,29 @@
-import Navbar from "./Home/Navbar";
-import Hero from "./Home/Hero";
-import Trainings from "./Home/Training/Trainings";
-import TrainerPage from "./Home/Trainer/TrainerPage";
-import ResAndChoose from "./Home/ResultsAndChoosUS/ResAndChoose";
-import App from "./Home/Getintouch/App";
+// import Home from "./Home/Home";
+// import Login from "./Auth/Login";
 
-import { useEffect } from "react";
+// //Admin Page
+// import AdminPages from "./Users/Admin/AdminPages";
+// import Dashboard from "./Users/Admin/Pages/Dashboard";
 
-function Main() {
-  useEffect(() => {
-    document.title = "Home | Dan";
-  });
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Trainings />
-      <TrainerPage />
-      <ResAndChoose />
-      <App />
-    </div>
-  );
-}
+// import { Routes, Route } from "react-router-dom";
 
-export default Main;
+// function Main() {
+//   return (
+//     <div>
+//       <Routes>
+//         <Route index element={<Home />} />
+//         <Route index element={<AdminPages />} />
+//         <Route path="/login" element={<Login />} />
+
+//         {/* Admin Page Routes */}
+//         {/* <Route path="/" element={<AdminPages />} /> */}
+//         {/* <Route path="/admin" element={<AdminPages />} /> */}
+
+//         {/*
+//         <Route path="/dashboard" element={<Dashboard />} /> */}
+//       </Routes>
+//     </div>
+//   );
+// }
+
+// export default Main;

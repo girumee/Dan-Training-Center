@@ -63,15 +63,15 @@ function Login() {
           {/* {teacherData.status == "error" && (
         <p className="text-danger text-center">Something went wrong</p>
       )} */}
-          <div className="w-[70%]">
-            <img src="./assets/dan1.gif" className="w-full h-scree" alt="" />
+          <div className=" flex w-[70%]">
+            <img src="./assets/login.png" className="w-full h-scree" alt="" />
           </div>
           <div className="row">
             <div className="col-lg-6 px-5 pt-5">
               <h1 className="font-weight-bold ">Trainer Log in</h1>
 
               <form>
-                <div className="form-row">
+                <div className="form-row ">
                   <div className="form-floating mb-2 col-lg-9">
                     <input
                       // value={teacherLoginData.email}

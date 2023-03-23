@@ -16,7 +16,7 @@ function Navbar() {
           </Link>
           <ul className="hidden md:flex">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/admin">Home</Link>
             </li>
             <li>
               <Link to="/">Trainings</Link>
