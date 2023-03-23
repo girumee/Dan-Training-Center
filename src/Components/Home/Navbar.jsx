@@ -19,6 +19,9 @@ function Navbar() {
               <HashLink to="/#home">Home</HashLink>
             </li>
             <li>
+              <HashLink to="/#trainers">Trainers</HashLink>
+            </li>
+            <li>
               <HashLink to="/#trainings">Trainings</HashLink>
             </li>
             <li>
