@@ -9,13 +9,14 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 
-export default function AdminTopbar() {
+export default function AdminTopbar(props) {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
 
   return (
-    <Box display="flex" justifyContent="space-between" p={2}>
+    <Box display="flex" justifyContent="space-between" p={2} className='shadow-md'>
+      <p className="font-bold text-xl">{props.title}</p>
       {/* SEARCH BAR */}
       <Box
         display="flex"

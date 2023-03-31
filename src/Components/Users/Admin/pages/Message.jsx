@@ -2,7 +2,7 @@ import AdminLayout from "../Layer/AdminLayer";
 
 export default function Message() {
   return (
-    <AdminLayout>
+    <AdminLayout title='Message'>
       <div className="w-full h-auto">
         <div className="flex m-5">
           <div>

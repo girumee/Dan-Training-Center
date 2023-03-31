@@ -3,7 +3,7 @@ import AdminLayer from "../Layer/AdminLayer";
 
 export default function Calender() {
   return (
-    <AdminLayer>
+    <AdminLayer title='Calender'>
       <div>Calender</div>
     </AdminLayer>
   );

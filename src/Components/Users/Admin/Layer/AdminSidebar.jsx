@@ -12,7 +12,8 @@ import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import Logout from '@mui/icons-material/Logout';
+import {BsArrowBarLeft,BsArrowBarRight} from 'react-icons/bs';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -62,7 +63,7 @@ export default function AdminSidebar() {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
+            icon={isCollapsed ? <BsArrowBarRight /> : undefined}
             style={{
               margin: "0px 0 0px 0",
               color: colors.grey[100],
@@ -77,16 +78,16 @@ export default function AdminSidebar() {
                   Admin
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon />
+                  <BsArrowBarLeft />
                 </IconButton>
               </Box>
             )}
           </MenuItem>
 
+            
           {!isCollapsed && (
             <Box mb="25px">
-              <Box display="flex" justifyContent="left" alignItems="left">
-                <Link to="/">
+              <Box display="flex">
                   {" "}
                   <img
                     src="assets/logo.svg"
@@ -95,10 +96,10 @@ export default function AdminSidebar() {
                     height="200px"
                     style={{ cursor: "pointer", borderRadius: "50%" }}
                   />
-                </Link>
               </Box>
             </Box>
           )}
+       
 
           <Box paddingLeft={isCollapsed ? undefined : ""}>
             <Item
@@ -161,6 +162,13 @@ export default function AdminSidebar() {
               title="Feedback"
               to="/feedback"
               icon={<QuestionAnswerOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Logout"
+              to="/"
+              icon={<Logout />}
               selected={selected}
               setSelected={setSelected}
             />
