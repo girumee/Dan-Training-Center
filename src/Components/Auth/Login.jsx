@@ -59,7 +59,7 @@ export default function Login() {
                   forgot Password?
                 </Link>
               </div>
-              <Link to="/admin">
+              <Link to="/dashboard">
                 <input
                   type="button"
                   value="Log In"

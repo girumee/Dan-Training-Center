@@ -4,8 +4,8 @@ import AdminTrainingCard from "../Constant/AdminTrainingCard";
 
 export default function Trainings() {
   return (
-    <AdminLayer>
-      <div className="h-[60px] bg-[#9AAFDA]">
+    <AdminLayer title='Trainings'>
+      <div className="h-[60] bg-[#9AAFDA]">
         <div className="flex pt-2">
           <div className="bg-white ml-2 w-[30%] text-center rounded-t-lg">
             <button className="">All 9</button>

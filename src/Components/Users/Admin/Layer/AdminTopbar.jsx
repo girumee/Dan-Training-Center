@@ -1,6 +1,5 @@
 import { Box, IconButton, useTheme } from "@mui/material";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { ColorModeContext, tokens } from "../Constant/Theme";
 import InputBase from "@mui/material/InputBase";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
@@ -15,7 +14,7 @@ import Menu from "@mui/material/Menu";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
-export default function AdminTopbar() {
+export default function AdminTopbar(props) {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
@@ -38,6 +37,8 @@ export default function AdminTopbar() {
       justifyContent="space-between"
       p={2}
       className="shadow-md">
+      <p className="font-bold text-xl">{props.title}</p>
+
       {/* SEARCH BAR */}
       <Box
         display="flex"

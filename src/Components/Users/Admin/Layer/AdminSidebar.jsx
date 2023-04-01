@@ -156,7 +156,6 @@ export default function AdminSidebar() {
             />
             <Item
               title="Logout"
-              to="/"
               icon={<LogoutIcon />}
               selected={selected}
               setSelected={setSelected}
