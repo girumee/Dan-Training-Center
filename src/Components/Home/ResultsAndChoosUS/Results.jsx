@@ -2,7 +2,7 @@ import ResultCard from "./ResultCard";
 
 export default function resourceLimits() {
   return (
-    <div className="w-full h-screen py-5 mt-5">
+    <div className="w-full h-screen py-5 mt-5 ">
       <h2 className="text-3xl text-center">Our results in numbers</h2>
       <div className="flex gap-16 my-4 items-center justify-center">
         <ResultCard

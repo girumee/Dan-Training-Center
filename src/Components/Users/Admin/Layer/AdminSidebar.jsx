@@ -15,6 +15,7 @@ import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlin
 import Logout from '@mui/icons-material/Logout';
 import {BsArrowBarLeft,BsArrowBarRight} from 'react-icons/bs';
 
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -87,6 +88,7 @@ export default function AdminSidebar() {
             
           {!isCollapsed && (
             <Box mb="25px">
+
               <Box display="flex">
                   {" "}
                   <img
@@ -96,6 +98,7 @@ export default function AdminSidebar() {
                     height="200px"
                     style={{ cursor: "pointer", borderRadius: "50%" }}
                   />
+
               </Box>
             </Box>
           )}
@@ -167,8 +170,9 @@ export default function AdminSidebar() {
             />
             <Item
               title="Logout"
-              to="/"
+
               icon={<Logout />}
+
               selected={selected}
               setSelected={setSelected}
             />

@@ -18,5 +18,7 @@ export default function TrainerPage(){
    </div>
    </div>
    <div className="h-screen w-full"></div>
+
     </div>
+  );
 }
