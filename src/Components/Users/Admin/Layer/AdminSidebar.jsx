@@ -12,8 +12,9 @@ import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
-import LogoutIcon from "@mui/icons-material/Logout";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import Logout from '@mui/icons-material/Logout';
+import {BsArrowBarLeft,BsArrowBarRight} from 'react-icons/bs';
+
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -63,7 +64,7 @@ export default function AdminSidebar() {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
+            icon={isCollapsed ? <BsArrowBarRight /> : undefined}
             style={{
               margin: "0px 0 0px 0",
               color: colors.grey[100],
@@ -78,25 +79,30 @@ export default function AdminSidebar() {
                   Admin
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon />
+                  <BsArrowBarLeft />
                 </IconButton>
               </Box>
             )}
           </MenuItem>
 
+            
           {!isCollapsed && (
             <Box mb="25px">
-              <Box display="flex" justifyContent="left" alignItems="left">
-                <img
-                  src="assets/logo.svg"
-                  alt="Dan Training Center"
-                  width="200px"
-                  height="200px"
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
+
+              <Box display="flex">
+                  {" "}
+                  <img
+                    src="assets/logo.svg"
+                    alt="Dan Training Center"
+                    width="200px"
+                    height="200px"
+                    style={{ cursor: "pointer", borderRadius: "50%" }}
+                  />
+
               </Box>
             </Box>
           )}
+       
 
           <Box paddingLeft={isCollapsed ? undefined : ""}>
             <Item
@@ -164,8 +170,9 @@ export default function AdminSidebar() {
             />
             <Item
               title="Logout"
-              to="/"
-              icon={<LogoutIcon />}
+
+              icon={<Logout />}
+
               selected={selected}
               setSelected={setSelected}
             />

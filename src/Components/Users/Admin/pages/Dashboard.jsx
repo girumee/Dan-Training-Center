@@ -5,7 +5,7 @@ import AdminLayer from "../Layer/AdminLayer";
 
 export default function Dashboard() {
   return (
-    <AdminLayer>
+    <AdminLayer title='Dashboard'>
       <div className="w-full h-[55%] grid grid-cols-2">
         {" "}
         <div className="w-auto h-auto bg-white m-7 shadow-xl rounded-md p-4">
