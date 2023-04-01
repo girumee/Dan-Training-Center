@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Box } from "@mui/material";
 //Admin Pages
 import AdminTopbar from "./AdminTopbar";
 //Admin Pages
@@ -16,11 +15,9 @@ export default function AdminLayer(props) {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="flex h-screen">
-          <div className="w-18 h-auto">
-            <AdminSidebar isSidebar={isSidebar} />
-          </div>
-          <main className="w-full h-18">
+        <div className="flex justify-between">
+          <AdminSidebar isSidebar={isSidebar} />
+          <main className="w-full">
             <AdminTopbar setIsSidebar={setIsSidebar} />
             {props.children}
           </main>

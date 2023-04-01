@@ -19,7 +19,7 @@ import {
 import Header from "./Header";
 import { tokens } from "../Constant/Theme";
 
-export default function Calendar() {
+export default function AdminSchedule() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [currentEvents, setCurrentEvents] = useState([]);
