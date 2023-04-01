@@ -41,6 +41,10 @@ code {
   -webkit-transform: scale(1, 1.2);
 }
 
+.ignoredSB::-webkit-scrollbar{
+    display: none;
+}
+
 .ignoreScrollbar::-webkit-scrollbar{
   width: 7px;
 }

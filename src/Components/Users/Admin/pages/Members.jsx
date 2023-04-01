@@ -9,21 +9,21 @@ import {useState} from "react";
 export default function Members() {
 
     const [invite,
-        setInvite] = useState(<button className="bg-[#B468FF] px-3 text-white py-1 rounded inline-block float-right" onClick={inviteClick}>
+        setInvite] = useState(<button className="bg-[#B468FF] px-3 text-white py-1 rounded " onClick={inviteClick}>
         <IoAddCircleOutline className="inline w-6 h-6"/>
         Invite Users
     </button>);
 
           function inviteClick(){
-            setInvite(<div className="inline-block float-right  border-2 rounded-md border-[#B468FF] py-0.5 pr-0.5">
-            <input type='search' className='w- text-center' placeholder="example@gmail.com"/>
-            <button className="bg-[#B468FF] px-3 text-white py-1 rounded float-right" onClick={send}>
+            setInvite(<div className=" border-2 rounded-md border-[#B468FF] py-0.5 pr-0.5">
+            <input type='search' className='w- text-center h-full' placeholder="example@gmail.com"/>
+            <button className="bg-[#B468FF] px-3 text-white py-1 rounded " onClick={send}>
             Send
         </button></div>);
           }
 
           function send(){
-            setInvite(<button className="bg-[#B468FF] px-3 text-white py-1 rounded inline-block float-right" onClick={inviteClick}>
+            setInvite(<button className="bg-[#B468FF] px-3 text-white py-1 rounded " onClick={inviteClick}>
             <IoAddCircleOutline className="inline w-6 h-6"/>
             Invite Users
         </button>);
@@ -33,8 +33,8 @@ export default function Members() {
         <AdminLayer >
             <div className="col-span-7 h-full">
                 {/* invite button */}
-                <div className="px-10 py-0 h-[2%]">
-                    <h1 className="inline text-xl font-semibold">100 Users in total</h1>
+                <div className="px-10 py-0 h-10 w-full justify-between flex">
+                    <h1 className=" text-xl font-semibold">100 Users in total</h1>
                     {invite}
                     
                 </div>
@@ -63,7 +63,7 @@ export default function Members() {
                 </div>
                 {/* member list */}
                 <div
-                    className="w-auto mr-3 mt-10 overflow-scroll overflow-x-hidden h-[calc(90%-40px)] ignoreScrollbar">
+                    className="w-auto mr-3 mt-10 overflow-scroll overflow-x-hidden h-[calc(90%-65px)] ignoreScrollbar">
                     <User/>
                     <User/>
                     <User/>
