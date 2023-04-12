@@ -12,9 +12,9 @@ import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
-import Logout from '@mui/icons-material/Logout';
-import {BsArrowBarLeft,BsArrowBarRight} from 'react-icons/bs';
-
+import LogoutIcon from "@mui/icons-material/Logout";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -41,7 +41,7 @@ export default function AdminSidebar() {
 
   return (
     <Box
-      className="h-screen"
+      className="h-screen "
       sx={{
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
@@ -50,7 +50,7 @@ export default function AdminSidebar() {
           backgroundColor: "transparent !important",
         },
         "& .pro-inner-item": {
-          padding: "2px 35px 2px 10px !important",
+          padding: "2px 35px 2px 1px !important",
         },
         "& .pro-inner-item:hover": {
           color: "#868dfb !important",
@@ -64,50 +64,36 @@ export default function AdminSidebar() {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <BsArrowBarRight /> : undefined}
+            icon={isCollapsed ? <ArrowForwardIosIcon /> : undefined}
             style={{
               margin: "0px 0 0px 0",
               color: colors.grey[100],
             }}>
             {!isCollapsed && (
-              <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                mr="20px">
+              <Box display="flex" justifyContent="space-between">
                 <Typography variant="h3" color={colors.grey[100]}>
                   Admin
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <BsArrowBarLeft />
+                  <ArrowBackIosNewIcon />
                 </IconButton>
               </Box>
             )}
           </MenuItem>
 
-            
-          {!isCollapsed && (
-            <Box mb="25px">
+          <Box>
+            <img
+              className="w-screen h-40"
+              src="assets/logo.svg"
+              alt="Dan Training Center"
+              style={{ cursor: "pointer", borderRadius: "60%" }}
+            />
+          </Box>
 
-              <Box display="flex">
-                  {" "}
-                  <img
-                    src="assets/logo.svg"
-                    alt="Dan Training Center"
-                    width="200px"
-                    height="200px"
-                    style={{ cursor: "pointer", borderRadius: "50%" }}
-                  />
-
-              </Box>
-            </Box>
-          )}
-       
-
-          <Box paddingLeft={isCollapsed ? undefined : ""}>
+          <Menu mr="20px" paddingLeft={isCollapsed ? undefined : ""}>
             <Item
               title="Dashboard"
-              to="/dashboard"
+              to="/admin-dashboard"
               icon={<DashboardCustomizeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -115,7 +101,7 @@ export default function AdminSidebar() {
 
             <Item
               title="Message"
-              to="/message"
+              to="/admin-message"
               icon={<MessageOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -123,7 +109,7 @@ export default function AdminSidebar() {
 
             <Item
               title="Trainings"
-              to="/trainings"
+              to="/admin-trainings"
               icon={<OndemandVideoOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -131,7 +117,7 @@ export default function AdminSidebar() {
 
             <Item
               title="Members"
-              to="/members"
+              to="/admin-members"
               icon={<GroupOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -139,15 +125,15 @@ export default function AdminSidebar() {
 
             <Item
               title="Announcement"
-              to="/announcement"
+              to="/admin-announcement"
               icon={<CampaignOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Calendar"
-              to="/calendar"
+              title="Schedule"
+              to="/admin-schedule"
               icon={<CalendarMonthOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -155,7 +141,7 @@ export default function AdminSidebar() {
 
             <Item
               title="Report"
-              to="/report"
+              to="/admin-report"
               icon={<ListAltOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -163,20 +149,19 @@ export default function AdminSidebar() {
 
             <Item
               title="Feedback"
-              to="/feedback"
+              to="/admin-feedback"
               icon={<QuestionAnswerOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Logout"
-
-              icon={<Logout />}
-
+              to="/"
+              icon={<LogoutIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-          </Box>
+          </Menu>
         </Menu>
       </ProSidebar>
     </Box>

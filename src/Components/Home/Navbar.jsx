@@ -11,7 +11,7 @@ function Navbar() {
     <div className="w-screen h-[90px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between item-center w-full h-full">
         <div className="flex items-center w-3/4 justify-between">
-          <Link to="/">
+          <Link to="/admin">
             <img src="assets/logo.svg" alt="Dan Training Center" />
           </Link>
           <ul className="hidden md:flex">
