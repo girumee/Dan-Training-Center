@@ -15,10 +15,18 @@ import Announcement from "./Components/Users/Admin/Pages/Announcement";
 import Calendar from "./Components/Users/Admin/Pages/Calender";
 import Report from "./Components/Users/Admin/Pages/Report";
 import Feedback from "./Components/Users/Admin/Pages/Feedback";
+import MessageChat from "./Components/Users/Admin/Pages/MessageChat";
 
 // import AdminLayout from "./Components/Users/Admin/Layout/AdminLayout";
 
 import { Routes as Switch, Route } from "react-router-dom";
+import TraineeDashboard from "./Components/Users/Admin/Pages/Trainee/TraineeDashboard";
+import TraineeTrainings from "./Components/Users/Admin/Pages/Trainee/TraineeTrainings";
+import TraineeSchedule from "./Components/Users/Admin/Pages/Trainee/TraineeSchedule";
+import TraineeAssignment from "./Components/Users/Admin/Pages/Trainee/TraineeAssignment";
+import TraineeAssesment from "./Components/Users/Admin/Pages/Trainee/TraineeAssesment";
+import TraineeFeedback from "./Components/Users/Admin/Pages/Trainee/TraineeFeedback";
+
 
 function App() {
   return (
@@ -40,6 +48,13 @@ function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/report" element={<Report />} />
         <Route path="/feedback" element={<Feedback />} />
+        <Route path="/message/chat" element={<MessageChat />} />
+        <Route path="/TraineeDashboard" element={<TraineeDashboard />} />
+        <Route path="/TraineeTraining" element={<TraineeTrainings />} />
+        <Route path="/TraineeSchedule" element={<TraineeSchedule />} />
+        <Route path="/TraineeAssignment" element={<TraineeAssignment />} />
+        <Route path="/TraineeFeedback" element={<TraineeAssesment />} />
+        <Route path="/TraineeFeedback" element={<TraineeFeedback />} />
       </Switch>
     </div>
   );

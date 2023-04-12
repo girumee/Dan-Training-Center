@@ -35,7 +35,7 @@ export default function ResultCard(props) {
   const names = props.name;
   return (
     <div className="content-center text-center">
-      <img src={props.image1} alt="star" className="w-96 h-3/5"></img>
+      <div alt="star" className="w-96 h-3/5">{props.image1}</div>
       <h3 className="mt-4 text-4xl font-bold text-amber-700">
         {names === "satisfaction" ? (
           <span>{views}%</span>
