@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AdminLayout from "../Layer/AdminLayer";
 
 export default function Message() {
@@ -19,6 +20,8 @@ export default function Message() {
           </div>
         </div>
         <div>
+      
+        <Link to="/message/chat">
           <div className="flex flex-row mx-12">
             <div>
               <div className="rounded-full p-0.5 border-2 border-[#962DFF] my-2">
@@ -43,6 +46,7 @@ export default function Message() {
               </p>
             </div>
           </div>
+          </Link>
           <div className="flex flex-row mx-12">
             <div>
               <div className="rounded-full p-0.5 border-2 border-gray-400 my-2">
