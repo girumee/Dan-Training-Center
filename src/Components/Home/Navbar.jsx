@@ -19,13 +19,16 @@ function Navbar() {
               <HashLink to="/#home">Home</HashLink>
             </li>
             <li>
+              <HashLink to="/#trainers">Trainers</HashLink>
+            </li>
+            <li>
               <HashLink to="/#trainings">Trainings</HashLink>
             </li>
             <li>
               <HashLink to="/#chooseus">Why Choose Us</HashLink>
             </li>
             <li>
-              <HashLink to="/#getintouch">Contact Us</HashLink>
+              <HashLink to="/#contactus">Contact Us</HashLink>
             </li>
           </ul>
         </div>

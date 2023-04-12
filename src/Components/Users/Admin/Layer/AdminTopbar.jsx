@@ -15,8 +15,10 @@ export default function AdminTopbar(props) {
   const colorMode = useContext(ColorModeContext);
 
   return (
+
     <Box display="flex" justifyContent="space-between" p={2} className='shadow-md'>
       <p className="font-bold text-xl">{props.title}</p>
+
       {/* SEARCH BAR */}
       <Box
         display="flex"
