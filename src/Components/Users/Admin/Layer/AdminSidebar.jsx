@@ -8,13 +8,13 @@ import DashboardCustomizeOutlinedIcon from "@mui/icons-material/DashboardCustomi
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import OndemandVideoOutlinedIcon from "@mui/icons-material/OndemandVideoOutlined";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
-import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import CampaignOutlinedIcon from "@mui/icons-material/FlipCameraAndroid";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/PermContactCalendarOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from "@mui/icons-material/PlayArrow";
+import ArrowForwardIosIcon from "@mui/icons-material/DoubleArrow";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();

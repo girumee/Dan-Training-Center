@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 //Auth Pages
 import Login from "./Components/Auth/Login";
 import Register from "./Components/Auth/Register";
+import NewLogin from './Components/Auth/newLogin';
 
 //Admin Page
 import Dashboard from "./Components/Users/Admin/Pages/Dashboard";
@@ -26,6 +27,7 @@ import TraineeSchedule from "./Components/Users/Admin/Pages/Trainee/TraineeSched
 import TraineeAssignment from "./Components/Users/Admin/Pages/Trainee/TraineeAssignment";
 import TraineeAssesment from "./Components/Users/Admin/Pages/Trainee/TraineeAssesment";
 import TraineeFeedback from "./Components/Users/Admin/Pages/Trainee/TraineeFeedback";
+import TraineeProfile from "./Components/Users/Admin/Pages/Trainee/TraineeProfile";
 
 import { Routes as Switch, Route, Navigate } from "react-router-dom";
 
@@ -44,6 +46,7 @@ function App() {
         {/* Auth pages */}
         <Route path="/login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/newLogin" element={<NewLogin />} />
 
         {/* Admin Page Routes  */}
 
@@ -63,7 +66,6 @@ function App() {
         <Route path="/trainings" element={<Trainings />} />
         <Route path="/members" element={<Members />} />
         <Route path="/announcement" element={<Announcement />} />
-        <Route path="/calendar" element={<Calendar />} />
         <Route path="/report" element={<Report />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/message/chat" element={<MessageChat />} />
@@ -73,6 +75,7 @@ function App() {
         <Route path="/TraineeAssignment" element={<TraineeAssignment />} />
         <Route path="/TraineeFeedback" element={<TraineeAssesment />} />
         <Route path="/TraineeFeedback" element={<TraineeFeedback />} />
+        <Route path="/TraineeProfile" element={<TraineeProfile />} />
 
       </Switch>
     </div>

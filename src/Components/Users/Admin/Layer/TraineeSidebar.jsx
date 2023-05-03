@@ -8,8 +8,8 @@ import DashboardCustomizeOutlinedIcon from "@mui/icons-material/DashboardCustomi
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import OndemandVideoOutlinedIcon from "@mui/icons-material/OndemandVideoOutlined";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
-import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import CampaignOutlinedIcon from "@mui/icons-material/FlipCameraAndroidOutlined";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/PermContactCalendarOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import Logout from '@mui/icons-material/Logout';
