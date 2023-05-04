@@ -1,7 +1,7 @@
 // import InputField from "./InputField";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-// import Navbar from "../Home/Navbar";
+import Navbar from "../Home/Navbar";
 import axios from "axios";
 // import InputField from "./InputField";
 
@@ -57,12 +57,14 @@ export default function NewLogin() {
   return (
     <div className="w-screen h-Screen ">
       <Navbar />
-      < className="grid grid-cols-2 h-screen">
+      <div className="grid grid-cols-2 h-screen">
         <div className=" p-[12%] pt-32 text-center h-1/2">
-          <Link to={"/newLogin"}><p className="text-3xl font-bold">
-            Sign up for Dan Training Center and get certified!{" "}
-            <span className="block font-serif italic mt-3">It's Free</span>
-          </p></Link>
+          <Link to={"/newLogin"}>
+            <p className="text-3xl font-bold">
+              Sign up for Dan Training Center and get certified!{" "}
+              <span className="block font-serif italic mt-3">It's Free</span>
+            </p>
+          </Link>
           <div className=" w-2/3 h-auto mx-auto mt-5">
             <div className="flex flex-col -space-y-16 ">
               <img alt="" src="/assets/loginside.png" className="flex" />
@@ -144,6 +146,7 @@ export default function NewLogin() {
             </form>
           </div>
         </div>
-        </div>
-  )
+      </div>
+    </div>
+  );
 }
