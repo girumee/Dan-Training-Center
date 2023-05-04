@@ -56,12 +56,12 @@ code {
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+.ignoreScrollbar::-webkit-scrollbar-thumb {
   background: rgb(66, 200, 43); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.ignoreScrollbar::-webkit-scrollbar-thumb:hover {
   background: rgb(63, 233, 33); 
 }

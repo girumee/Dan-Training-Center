@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 function Hero() {
   return (
     <div className="w-full h-screen py-0" id="home">
@@ -14,11 +13,10 @@ function Hero() {
           Find the best Trainings <br /> and Learn.
         </h1>
         <div className="flex text-center mx-auto gap-2">
-          <Link to="/register">
-            {" "}
-            <button className="text-2xl py-2 my-6 text-center w-48">
-              Get Started
-            </button>
+        <Link to='TraineeDashboard'>
+          <button className="text-2xl py-2 my-6 text-center w-48">
+            Get Started
+          </button>
           </Link>
           <p className="text-2xl py-2 my-6 w-48">Learn More ---</p>
         </div>

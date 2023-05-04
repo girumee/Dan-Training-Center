@@ -1,5 +1,5 @@
-export default function FeedbackUser() {
-    return <div>
+export default function FeedbackUser(props) {
+    return <div onClick={()=>{props.detail();}}>
         <div className="grid grid-cols-4 justify-between px-4 py-3 hover:shadow-lg hover:rounded-xl hover:ml-3">
             <div className="flex">
                 <img src="/assets/Admin/member.png" alt="" className="rounded-2x w-10"/>

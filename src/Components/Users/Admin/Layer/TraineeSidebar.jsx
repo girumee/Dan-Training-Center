@@ -8,13 +8,12 @@ import DashboardCustomizeOutlinedIcon from "@mui/icons-material/DashboardCustomi
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import OndemandVideoOutlinedIcon from "@mui/icons-material/OndemandVideoOutlined";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
-import CampaignOutlinedIcon from "@mui/icons-material/FlipCameraAndroid";
+import CampaignOutlinedIcon from "@mui/icons-material/FlipCameraAndroidOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/PermContactCalendarOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
-import LogoutIcon from "@mui/icons-material/Logout";
-import ArrowBackIosNewIcon from "@mui/icons-material/PlayArrow";
-import ArrowForwardIosIcon from "@mui/icons-material/DoubleArrow";
+import Logout from '@mui/icons-material/Logout';
+import {BsArrowBarLeft,BsArrowBarRight} from 'react-icons/bs';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -33,7 +32,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   );
 };
 
-export default function AdminSidebar() {
+export default function TraineeSidebar() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -41,7 +40,7 @@ export default function AdminSidebar() {
 
   return (
     <Box
-      className="h-screen "
+      className="h-screen"
       sx={{
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
@@ -50,7 +49,7 @@ export default function AdminSidebar() {
           backgroundColor: "transparent !important",
         },
         "& .pro-inner-item": {
-          padding: "2px 35px 2px 1px !important",
+          padding: "2px 35px 2px 10px !important",
         },
         "& .pro-inner-item:hover": {
           color: "#868dfb !important",
@@ -64,105 +63,101 @@ export default function AdminSidebar() {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <ArrowForwardIosIcon /> : undefined}
+            icon={isCollapsed ? <BsArrowBarRight /> : undefined}
             style={{
               margin: "0px 0 0px 0",
               color: colors.grey[100],
             }}>
             {!isCollapsed && (
-              <Box display="flex" justifyContent="space-between">
+              <Box
+                display="flex"
+                justifyContent="space-between"
+                alignItems="center"
+                mr="20px">
                 <Typography variant="h3" color={colors.grey[100]}>
-                  Admin
+                  Trainee
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <ArrowBackIosNewIcon />
+                  <BsArrowBarLeft />
                 </IconButton>
               </Box>
             )}
           </MenuItem>
 
-          <Box>
-            <img
-              className="w-48 h-full"
-              src="assets/logo.svg"
-              alt="Dan Training Center"
-              style={{ cursor: "pointer" }}
-            />{" "}
-            <Link to="/"></Link>
-          </Box>
+            
+          {!isCollapsed && (
+            <Box mb="25px">
+              <Box display="flex">
+                  {" "}
+                  <img
+                    src="assets/logo.svg"
+                    alt="Dan Training Center"
+                    width="200px"
+                    height="200px"
+                    style={{ cursor: "pointer", borderRadius: "50%" }}
+                  />
+              </Box>
+            </Box>
+          )}
+       
 
-          <Menu mr="20px" paddingLeft={isCollapsed ? undefined : ""}>
+          <Box paddingLeft={isCollapsed ? undefined : ""}>
             <Item
               title="Dashboard"
-              to="/admin-dashboard"
+              to="/TraineeDashboard"
               icon={<DashboardCustomizeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Message"
-              to="/admin-message"
+              title="My trainings"
+              to="/TraineeTraining"
               icon={<MessageOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Trainings"
-              to="/admin-trainings"
+              title="Schedules"
+              to="/TraineeSchedule"
               icon={<OndemandVideoOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Members"
-              to="/admin-members"
+              title="Assignment"
+              to="/TraineeAssignment"
               icon={<GroupOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Announcement"
-              to="/admin-announcement"
+              title="Feedbacks"
+              to="/TraineeFeedback"
               icon={<CampaignOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Schedule"
-              to="/admin-schedule"
+              title="Asseessments & Placement"
+              to="/TraineeAssessment"
               icon={<CalendarMonthOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Report"
-              to="/admin-report"
-              icon={<ListAltOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-            <Item
-              title="Feedback"
-              to="/admin-feedback"
-              icon={<QuestionAnswerOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
               title="Logout"
-              to="/logout"
-              icon={<LogoutIcon />}
+              to="/"
+              icon={<Logout />}
               selected={selected}
               setSelected={setSelected}
             />
-          </Menu>
+          </Box>
         </Menu>
       </ProSidebar>
     </Box>
