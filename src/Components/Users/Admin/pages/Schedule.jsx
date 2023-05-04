@@ -51,8 +51,7 @@ export default function AdminSchedule() {
   };
 
   return (
-
-    <AdminLayer>
+    <AdminLayer title="Schedule">
       <Box m="20px">
         <Header title="Calendar" subtitle="Make a Schedule here" />
 

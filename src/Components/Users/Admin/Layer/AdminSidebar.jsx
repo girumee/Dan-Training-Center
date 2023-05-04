@@ -83,11 +83,12 @@ export default function AdminSidebar() {
 
           <Box>
             <img
-              className="w-screen h-40"
+              className="w-48 h-full"
               src="assets/logo.svg"
               alt="Dan Training Center"
-              style={{ cursor: "pointer", borderRadius: "60%" }}
-            />
+              style={{ cursor: "pointer" }}
+            />{" "}
+            <Link to="/"></Link>
           </Box>
 
           <Menu mr="20px" paddingLeft={isCollapsed ? undefined : ""}>
@@ -156,7 +157,7 @@ export default function AdminSidebar() {
             />
             <Item
               title="Logout"
-              to="/"
+              to="/logout"
               icon={<LogoutIcon />}
               selected={selected}
               setSelected={setSelected}

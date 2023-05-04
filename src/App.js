@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 
 //Auth Pages
 import Login from "./Components/Auth/Login";
+import Logout from "./Components/Auth/Logout";
 import Register from "./Components/Auth/Register";
 
 //Admin Page
@@ -33,6 +34,7 @@ function App() {
 
         {/* Auth pages */}
         <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
         <Route path="/Register" element={<Register />} />
 
         {/* Admin Page Routes  */}
